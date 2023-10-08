@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://localhost:6050/ws/send"
+           xmlns="http://localhost:6050/ws/send">
+
+    <!-- Define the User complex type -->
+    <xs:complexType name="UserType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Define the input message element -->
+    <xs:element name="sendRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Define the output message element -->
+    <xs:element name="sendResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" type="UserType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

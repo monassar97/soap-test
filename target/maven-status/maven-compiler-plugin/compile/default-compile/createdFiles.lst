@@ -1,0 +1,9 @@
+com\example\producingwebservice\CliqEndpoint.class
+com\example\producingwebservice\WebServiceConfig.class
+localhost\_6050\ws\send\package-info.class
+localhost\_6050\ws\send\SendResponse.class
+localhost\_6050\ws\send\ObjectFactory.class
+localhost\_6050\ws\send\UserType.class
+com\example\producingwebservice\User.class
+com\example\producingwebservice\WebServiceApplication.class
+localhost\_6050\ws\send\SendRequest.class
